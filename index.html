@@ -27,7 +27,7 @@
           >
           <ul lang="uk" class="navigation-list list">
             <li>
-                      <a class="navigation-link link current current-studio" href="./index.html">Cтудія</a>
+                      <a class="navigation-link link current" href="./index.html">Cтудія</a>
                        </li>
             <li>
               <a class="navigation-link link" href="./portfolio.html">Портфоліо</a>
@@ -54,7 +54,7 @@
       <section class="service-order service-order-back">
         <div class="container">
           <h1 class="service-order-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="service-order-button" type="button">Замовити послугу</button>
+          <button class="service-order-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features">
@@ -454,6 +454,18 @@
           </ul>
         </div>
       </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>
+           <svg width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close" ></use>
+           </svg>
+
+           </svg> 
+          </button>
+        </div>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
